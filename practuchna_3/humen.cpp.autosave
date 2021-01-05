@@ -1,0 +1,21 @@
+#include "humen.h"
+
+Humen::Humen()
+{
+    
+}
+
+void Humen::Data()
+{
+    cout<<"Enter surname: ";
+    cin>>surname;
+    cout<<"Enter name: ";
+    cin>>name;
+    cout<<"Enter fatherly: ";
+    cin>>fatherly;
+    cout<<"Enter phone number: ";
+    cin>>phone_number;
+    cout<<"Enter address: ";
+    cin>>address;
+    
+}

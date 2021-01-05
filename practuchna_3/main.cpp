@@ -5,9 +5,16 @@ using namespace std;
 
 int main()
 {
-    Student obj;
-    Abitutient obj1;
-    cin >> obj1;
+    Human first_humen;
+    Abitutient obj;
+    //inputData
+    obj.Data();
+    cin >> obj;
+    Student obj1;
+    //outputData
+    cout << first_humen;
+    cout << obj;
     cout << obj1;
+
     return 0;
 }

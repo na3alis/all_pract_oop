@@ -1,23 +1,20 @@
 #ifndef STUDENT_H
 #define STUDENT_H
 #include "iostream"
+#include "human.h"
 using namespace std;
 
-class Student
+class Student : public Human
 {
 private:
-    int id;
-    string second_name;
-    string name;
-    string fatherly;
-    string adress;
-    string phone_number;
     string faculty;
     string group;
     string course;
-
 public:
     Student();
+    friend ostream & operator << (ostream &out, Student &ab){
+        out << "Faculty = " << ab.faculty << endl << "Group = "<< ab.group << endl << "Course" << ab.course;
+    }
 };
 
 #endif // STUDENT_H

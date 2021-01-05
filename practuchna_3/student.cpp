@@ -2,6 +2,11 @@
 
 Student::Student()
 {
-    cout<<"Enter name: ";
-    cin>>name;
+    cout<<"Enter faculty: ";
+    cin>>faculty;
+    cout<<"Enter group: ";
+    cin>>group;
+    cout<<"Enter course: ";
+    cin>>course;
+    cout<<endl;
 }

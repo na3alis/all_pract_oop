@@ -1,0 +1,19 @@
+#ifndef HUMEN_H
+#define HUMEN_H
+#include "iostream"
+using namespace std;
+
+class Humen
+{
+private:
+    string surname;
+    string name;
+    string fatherly;
+    string address;
+    string phone_number;
+public:
+    Humen();
+    void Data();
+};
+
+#endif // HUMEN_H

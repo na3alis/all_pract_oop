@@ -26,6 +26,10 @@ public:
         cout<<"Enter GPA: ";
         in >> ab.GPA;
     };
+    friend ostream & operator << (ostream &out, Abitutient &ab)
+    {
+        out << "id = " << ab.id << endl << "GPA = "<< ab.GPA <<endl<< endl;
+    };
 };
 
 #endif // ABITUTIENT_H

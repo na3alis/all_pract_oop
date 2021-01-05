@@ -5,8 +5,9 @@ using namespace std;
 
 int main()
 {
-    Abitutient obj1 , obj2 , obj3;
-    cin >> obj1 >> obj2 >> obj3;
-    cout << obj1 << obj2 << obj3;
+    Student obj;
+    Abitutient obj1;
+    cin >> obj1;
+    cout << obj1;
     return 0;
 }

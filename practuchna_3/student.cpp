@@ -2,5 +2,6 @@
 
 Student::Student()
 {
-
+    cout<<"Enter name: ";
+    cin>>name;
 }

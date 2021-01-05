@@ -18,17 +18,17 @@ public:
     ~Abitutient();
     Abitutient(int a, int b);
     Abitutient(const Abitutient &obj);
-    friend istream & operator >> (istream &in, Abitutient &ab)
-    {
+    friend istream & operator >> (istream &in, Abitutient &ab){
         cout<<"Enter id: ";
         in >> ab.id;
         cout<<"Enter GPA: ";
         in >> ab.GPA;
-    };
-    friend ostream & operator << (ostream &out, Abitutient &ab)
-    {
-        out << "id = " << ab.id << endl << "GPA = "<< ab.GPA <<endl<< endl;
-    };
+    }
+    friend ostream & operator << (ostream &out, Abitutient &ab){
+        cout<<endl;
+        out << "id = " << ab.id << endl << "GPA = "<< ab.GPA << endl;
+    }
+
 };
 
 #endif // ABITUTIENT_H

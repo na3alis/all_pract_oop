@@ -1,9 +1,10 @@
+#ifndef ABITUTIENT_H
 #define ABITUTIENT_H
 #include "iostream"
 #include "human.h"
 using namespace std;
 
-class Abitutient
+class Abitutient : public Human
 {
 private:
     int id;

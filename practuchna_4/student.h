@@ -1,7 +1,6 @@
 #ifndef STUDENT_H
 #define STUDENT_H
 #include "iostream"
-#include "human.h"
 using namespace std;
 
 class Student

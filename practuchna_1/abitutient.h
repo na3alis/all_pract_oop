@@ -15,6 +15,9 @@ private:
     float GPA;
 public:
     Abitutient();
+    ~Abitutient();
+    Abitutient(int a, int b);
+    Abitutient(const Abitutient &obj);
 };
 
 #endif // ABITUTIENT_H

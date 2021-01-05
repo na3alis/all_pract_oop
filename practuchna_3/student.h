@@ -13,7 +13,7 @@ private:
 public:
     Student();
     friend ostream & operator << (ostream &out, Student &ab){
-        out << "Faculty = " << ab.faculty << endl << "Group = "<< ab.group << endl << "Course" << ab.course;
+        out << "Faculty: " << ab.faculty << endl << "Group: "<< ab.group << endl << "Course: " << ab.course;
     }
 };
 

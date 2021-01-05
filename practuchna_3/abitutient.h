@@ -23,7 +23,7 @@ public:
     }
 
     friend ostream & operator << (ostream &out, Abitutient &ab){
-        out << "id = " << ab.id << endl << "GPA = "<< ab.GPA << endl;
+        out << "ID: " << ab.id << endl << "GPA: "<< ab.GPA << endl;
     }
 };
 

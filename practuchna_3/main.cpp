@@ -12,9 +12,7 @@ int main()
     cin >> obj;
     Student obj1;
     //outputData
-    cout << first_humen;
     cout << obj;
     cout << obj1;
-
     return 0;
 }

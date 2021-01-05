@@ -17,4 +17,11 @@ void Human::Data()
     cin>>phone_number;
     cout<<"Enter address: ";
     cin>>address;
+    cout << endl << "Surname: " << surname << endl
+            << "Name: " << name << endl
+               << "Fatherly: " << fatherly << endl
+                  << "Phone number: " << phone_number << endl
+                  << "Address: " << address << endl<<endl;
+
 }
+

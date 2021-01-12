@@ -43,3 +43,42 @@ void Human::saveToFile(string _pathToFile)
     }
     fout.close();
 }
+
+void Human::loadFromFile(string _pathToFile)
+{
+    string str;
+    string  line;
+    int i = 0;
+    int count = 0;
+    myFile = _pathToFile;
+
+     //--------------------------
+    ifstream file("myFile.txt");
+    while (getline(file, line)) {
+        count++;
+    }
+
+     //--------------------------
+     fin.open(myFile);
+     if(!fin.is_open())
+     {
+         cout << "Fail doesn't open" << endl;
+     }
+     else
+     {
+
+         while( i < count)
+         {
+             ++i;
+             getline(fin, str);
+             if(str[0] == 'H')
+             {
+                 cout<<str<<"\n";
+             }
+             else if(str[0] == 'A') {
+                 cout <<"\n";
+             }
+         }
+     }
+     fin.close();
+}

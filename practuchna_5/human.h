@@ -13,12 +13,15 @@ private:
     string address;
     string phone_number;
     string myFile;
+    ifstream fin;
     ofstream fout;
 public:
     Human();
     virtual void Data();
     virtual void getData();
     virtual void saveToFile(string _pathToFile);
+    virtual void loadFromFile(string _pathToFile);
+
 };
 
 #endif // HUMEN_H

@@ -40,11 +40,27 @@ void aver_val(int size)
 //    }
 };
 
+template <typename T>
+void amax(int size , T arr[])
+{
+    T max_val;
+    for (int i = 0; i < size; i++)
+    {
+        if(max_val < arr[i])
+        {
+            max_val = arr[i];
+        }
+    }
+    cout << "Max value is " << max_val << endl;
+};
+
 int main()
 {
-    aver_val<int>(3);
-    aver_val<long>(3);
-    aver_val<double>(3);
-    aver_val<char>(3);
+    int arr[3] = {11,31,12};
+    amax<int>(3, arr);
 
+//    aver_val<int>(3);
+//    aver_val<long>(3);
+//    aver_val<double>(3);
+//    aver_val<char>(3);
 }
